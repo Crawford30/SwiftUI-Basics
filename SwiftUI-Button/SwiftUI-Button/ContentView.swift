@@ -16,6 +16,8 @@ struct ContentView: View {
                    Button("What Sap") {
                        // Trailing closure approach
                    }
+                   .buttonStyle(.borderedProminent)
+                   .tint(.green)
                    .padding()
                }
     }
