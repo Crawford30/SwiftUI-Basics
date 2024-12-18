@@ -10,15 +10,19 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+                   Button("Hello", action: {})
+                       .padding(EdgeInsets(top: 0, leading: 0, bottom: 12.0, trailing: 0))
+
+                   Button("What Sap") {
+                       // Trailing closure approach
+                   }
+                   .padding()
+               }
     }
 }
 
-#Preview {
-    ContentView()
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
 }
